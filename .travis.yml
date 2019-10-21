@@ -1,0 +1,39 @@
+language: csharp
+dist: bionic
+mono: none
+dotnet: 2.2
+sudo: required
+
+addons:
+  apt:
+    update: true
+    packages:
+      - python3-pip
+      - python3-dev
+      - python3-setuptools
+
+branches:
+  except:
+    - master
+
+stages:
+  - generate
+
+before_install:
+  - pip3 install wheel --no-cache-dir
+
+install:
+  - pip3 install -r requirements.txt
+  - cd ${PWD}/../
+  - git clone https://salesforce-marketingcloud:${GITHUB_TOKEN}@github.com/salesforce-marketingcloud/mcsdk-automation-framework-core.git
+  - cd mcsdk-automation-framework-core
+  - sh scripts/checkout.sh
+  - python3 setup.py sdist
+  - pip3 install dist/mcsdk-automation-framework-core-0.0.0.tar.gz
+  - cd ${TRAVIS_BUILD_DIR}
+
+jobs:
+  include:
+    - stage: generate
+      name: "Generate the code"
+      script: python3 ${TRAVIS_BUILD_DIR}/src/integrator/main.py
