@@ -4,12 +4,13 @@
 This repo is part of the Salesforce Marketing Cloud SDK Automation Framework.
 
 ## Contents
-- Language specific Custom Code to handle Auth, Caching etc.
 - Custom Mustache files [SwaggerCodegen] for C#
+- Python Scripts for C# SDK Automation
+- Client generator which generates the [Client](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/blob/master/src/Salesforce.MarketingCloud/Api/Client.cs) class
 
 ## Getting Started
 
-1. If you would like to add a new authentication flow or if you need any language specific feature in the SDK, this is where you would do it. 
+1. If you would like to make changes to the Client generator or the custom mustache files (ApiClient, etc), this is where you would do it. 
 2. Make your own branch.
 3. Push the changes to your remote branch and create a PR against the most recent version branch from your new branch.
 4. This PR would trigger the Travis CI process. 
