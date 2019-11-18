@@ -9,12 +9,12 @@ This repo is part of the Salesforce Marketing Cloud SDK Automation Framework.
 
 ## Getting Started
 
-1. If you would like to add a new authentication flow or if you need any language specific feature in the SDK, this is where you would do. 
-2. Make your own branch
-3. Push the changes to your branch remote and create a PR against the most recent version branch from your new branch.
+1. If you would like to add a new authentication flow or if you need any language specific feature in the SDK, this is where you would do it. 
+2. Make your own branch.
+3. Push the changes to your remote branch and create a PR against the most recent version branch from your new branch.
 4. This PR would trigger the Travis CI process. 
-5. At the end of the CI Process, A new branch would be created on the [SDK Repo](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp). Also a PR would be created against the most recent version branch in the SDK Repo's. 
-6. You can then download the SDK project and test the changes in the new branch. 
+5. At the end of the CI Process, a new branch would be created on the [SDK Repo](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp). Also a PR would be created against the most recent version branch in the SDK Repo. 
+6. You can then download the SDK project and test the changes on the new branch. 
 7. As of now, the process of merging the code to the Master branch is set to Manual for first phase. It would also be automated in future releases. 
 
 ## Contact us
