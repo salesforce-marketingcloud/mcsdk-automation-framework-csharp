@@ -1,0 +1,15 @@
+generators:
+  csharp: "ClientGenerator"
+
+repos:
+  current:
+    name: "mcsdk-automation-framework-csharp"
+  core:
+    name: "mcsdk-automation-framework-core"
+    owner: "salesforce-marketingcloud"
+    swagger_cli: "{%repos_core_dir%}/bin/swagger-codegen-cli.jar"
+    swagger_spec: "{%repos_core_dir%}/resources/sfmc-openapi-v2.json"
+  sdk:
+    name: "mcsdk-automation-csharp"
+    owner: "salesforce-marketingcloud"
+    packageName: "Salesforce.MarketingCloud"
