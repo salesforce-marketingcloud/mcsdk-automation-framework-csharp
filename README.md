@@ -1,5 +1,3 @@
-# This project is under development
-
 # MCSDK-Automation-Framework-CSharp
 
 ## Overview
