@@ -26,6 +26,6 @@ This repo is part of the Salesforce Marketing Cloud SDK Automation Framework.
     - 👎 - downvote
 
 ## License
-By contributing your code, you agree to license your contribution under the terms of the [BSD 3-Clause License](https://github.com/salesforce-marketingcloud/mcsdk-automation-framework-csharp/blob/documentation/License.md).
+By contributing your code, you agree to license your contribution under the terms of the [BSD 3-Clause License](https://github.com/salesforce-marketingcloud/mcsdk-automation-framework-csharp/blob/master/License.md).
 
 
